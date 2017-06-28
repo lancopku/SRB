@@ -6,11 +6,11 @@ Code for "Improving Semantic Relevance for Sequence-to-Sequence Learning of Chin
 * CUDA 8.0 (For GPU)
 * [ROUGE](http://research.microsoft.com/~cyl/download/ROUGE-1.5.5.tgz)
 ## Data
-The dataset in the paper is Large Scale Chinese Short Text Summarization ([LCSTS](http://icrc.hitsz.edu.cn/Article/show/139.html)).
+The dataset in the paper is Large Scale Chinese Short Text Summarization [(LCSTS)](http://icrc.hitsz.edu.cn/Article/show/139.html).
 To preprocess the data, please split the sentences into characters, and transform the characters into numbers (ids).
 ## Run
 ```bash
-python3 train.py
+python3 MleTrain.py
 ```
 ## Cite
 To use this code, please cite the following paper:<br><br>
