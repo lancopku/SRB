@@ -125,14 +125,15 @@ class SeqUnit(object):
 
         def loop_fn(t, x_t, s_t, emit_ta, finished):
             o_t, s_nt = self.enc_lstm(x_t, s_t, finished)
-            emit_ta = emit_ta.write(t, o_t)
             finished = tf.greater_equal(t+1, inputs_len)
             x_nt = tf.cond(tf.reduce_all(finished), lambda: tf.zeros([batch_size, self.emb_size], dtype=tf.float32),
                                      lambda: inputs_ta.read(t+1))
 
             h = tf.nn.relu(self.gated_linear(tf.concat([o_t, x_nt], axis=-1)))
-            p = tf.sigmoid(self.gated_output(h))
+            p = tf.sigmoid(self.gated_output(o_t))
             x_nt = x_nt * p
+            o_t = o_t * p
+            emit_ta = emit_ta.write(t, o_t)
 
             return t+1, x_nt, s_nt, emit_ta, finished
 
