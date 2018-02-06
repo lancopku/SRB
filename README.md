@@ -1,5 +1,6 @@
 # Semantic Relevance Based Text Summarization Model
 Code for "Improving Semantic Relevance for Sequence-to-Sequence Learning of Chinese Social Media Text Summarization"
+The codes are also used for "A Semantic Relevance Based Neural Network for Text Summarization and Text Simplification"
 ## Requirements
 * Tensorflow r1.0.1
 * Python 3.5

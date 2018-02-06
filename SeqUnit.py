@@ -69,7 +69,7 @@ class SeqUnit(object):
         mask = tf.sign(tf.to_float(self.decoder_output))
         losses = mask * losses
         if SRB:
-            self.mean_loss = tf.reduce_mean(losses) + self.weight * similarity
+            self.mean_loss = tf.reduce_mean(losses) - self.weight * similarity
         else:
             self.mean_loss = tf.reduce_mean(losses)
 
