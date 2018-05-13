@@ -18,6 +18,7 @@ If you use this code for your research, please cite the paper this code is
 based on: <a href="https://arxiv.org/pdf/1706.02459.pdf">Improving Semantic Relevance for Sequence-to-Sequence Learning of
 Chinese Social Media Text Summarization</a>:
 
+```
 @inproceedings{MaEA2017,
 	author    = {Shuming Ma and
 	Xu Sun and
@@ -33,3 +34,4 @@ Chinese Social Media Text Summarization</a>:
 	pages     = {635--640},
 	year      = {2017}
 }
+```
