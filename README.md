@@ -14,7 +14,22 @@ To preprocess the data, please split the sentences into characters, and transfor
 python3 MleTrain.py
 ```
 ## Cite
-To use this code, please cite the following paper:<br><br>
-Shuming Ma, Xu Sun, Jingjing Xu, Houfeng Wang, Wenjie Li and Qi Su. 
-Improving Semantic Relevance for Sequence-to-Sequence Learning of Chinese Social Media Text Summarization. In proceedings of ACL.
-[[pdf]](https://arxiv.org/pdf/1706.02459.pdf)
+If you use this code for your research, please cite the paper this code is 
+based on: <a href="https://arxiv.org/pdf/1706.02459.pdf">Improving Semantic Relevance for Sequence-to-Sequence Learning of
+Chinese Social Media Text Summarization</a>:
+
+@inproceedings{MaEA2017,
+	author    = {Shuming Ma and
+	Xu Sun and
+	Jingjing Xu and
+	Houfeng Wang and
+	Wenjie Li and
+	Qi Su},
+	title     = {Improving Semantic Relevance for Sequence-to-Sequence Learning of
+	Chinese Social Media Text Summarization},
+	booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational
+	Linguistics, {ACL} 2017, Vancouver, Canada, July 30 - August 4, Volume
+	2: Short Papers},
+	pages     = {635--640},
+	year      = {2017}
+}
